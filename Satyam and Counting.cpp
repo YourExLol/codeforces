@@ -1,19 +1,25 @@
+## Problem Statement ##
+## Satyam and Counting
+## https://codeforces.com/contest/2009/problem/D
+
+## Code begins here #####################################################################################
+
 #include<bits/stdc++.h>
 using namespace std;
 
 int main(){
-
+    //Test Cases
     int t;
     cin>>t;
     while(t--){
-    int n;
-    long long ans=0;
-    set<pair<int,int>> s;
-    
     //array size
+    int n;
     cin>>n;
-
-    //storing cordinates in set, since our algothim is dependent on search.
+    long long ans=0;
+        
+    // to store cordinates
+    //storing cordinates in set, since we can search quickly.
+    set<pair<int,int>> s;
     for(int i=0;i<n;i++){
         int x,y;
         cin>>x>>y;
@@ -32,10 +38,10 @@ int main(){
         //x cordinate for such traingle are (x,0)(x+1,1)(x+2,0) and switching y cordinate to get upside down triangle
         if(y==0 && s.count({x+1,1}) && s.count({x+2,0})) ans+=1;
         if(y==1 && s.count({x+1,0}) && s.count({x+2,1})) ans+=1;
-    }
+    } // for loop ends here
     
-   cout<<ans<<endl;
-    }
+         cout<<ans<<endl;
+    } //while loop ends here
 
 
 }

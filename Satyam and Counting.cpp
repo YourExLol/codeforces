@@ -2,7 +2,7 @@
 ## Satyam and Counting
 ## https://codeforces.com/contest/2009/problem/D
 
-## Code begins here #####################################################################################
+############################################### Code begins here ##############################################################
 
 #include<bits/stdc++.h>
 using namespace std;

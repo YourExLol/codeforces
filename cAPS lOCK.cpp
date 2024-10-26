@@ -1,6 +1,6 @@
 ## Problem Statement ##
-## Black and White Stripe
-## https://codeforces.com/contest/1690/problem/D
+## cAPS lOCK
+## https://codeforces.com/problemset/problem/131/A
 
 ############################################### Code begins here ##############################################################
 
